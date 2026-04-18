@@ -1,0 +1,61 @@
+/* Blur Logic */
+.zolo-style-restriction { position: relative; width: 100%; overflow: hidden; border-radius: 12px; }
+.zolo-blurred-content { filter: blur(12px); pointer-events: none; user-select: none; opacity: 0.5; transition: filter 0.3s ease; }
+.zolo-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(4px); z-index: 10; }
+.zolo-modal { background: #ffffff; padding: 40px 30px; border-radius: 24px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); text-align: center; max-width: 380px; width: 90%; border: 1px solid rgba(0,0,0,0.05); }
+
+
+.zolo-modal h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+
+/* The Popup Overlay - Handles Floating/Centering */
+.ecr-modal-overlay { 
+    display: none; /* JS will change this to 'flex' */
+    position: fixed; 
+    z-index: 999999; 
+    left: 0; top: 0; width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.8); 
+    backdrop-filter: blur(8px);
+    /* NEW: Vertical and Horizontal Centering */
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Floating Modal Content - Conflict Free */
+.ecr-modal-content { 
+    position: relative;
+    background: #fff; 
+    width: 450px; 
+    height: 600px; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+    /* Removed all margins/transforms to allow button grow effect */
+}
+
+.ecr-close { position: absolute; right: 20px; top: 10px; font-size: 30px; cursor: pointer; z-index: 100; color: #333; }
+.ecr-iframe { width: 100%; height: 100%; border: none; }
+
+/* Button Group and your working Grow Effect */
+.ecr-btn-group { display: flex; gap: 10px; margin-top: 20px; }
+
+.zolo-btn { 
+    flex: 1;
+    background: #1a1a1a;
+    color: #fff !important; 
+    padding: 14px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    transition: transform 0.2s ease; /* Your original transition */
+}
+
+.zolo-btn:hover {
+    transform: scale(1.05); /* Your original grow effect */
+    background: #333; /* Slight change for feedback */
+}
