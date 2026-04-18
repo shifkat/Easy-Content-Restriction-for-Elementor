@@ -1,16 +1,14 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/render?type=soft&color=auto&height=200&section=header&text=Easy%20Content%20Restriction&fontSize=50" alt="Header" />
-</p>
+
 
 # 🔒 Easy Content Restriction for Elementor
 
 <p align="left">
   <img src="https://img.shields.io/badge/WordPress-v6.0+-21759b?style=for-the-badge&logo=wordpress&logoColor=white" />
   <img src="https://img.shields.io/badge/Elementor-v3.0+-92003B?style=for-the-badge&logo=elementor&logoColor=white" />
-  <img src="https://img.shields.io/badge/License-GPL--2.0-green?style=for-the-badge" />
+  
 </p>
 
-A premium, lightweight Elementor extension designed to restrict specific containers or sections with a sophisticated **"Zolo-style" blur effect**. Featuring a seamless iFrame modal login system, it ensures users never leave the page to sign in, providing a top-tier user experience.
+A premium, lightweight Elementor extension designed to restrict specific containers or sections with a sophisticated ** blur effect**. Featuring a seamless iFrame modal login system, it ensures users never leave the page to sign in, providing a top-tier user experience.
 
 ---
 
